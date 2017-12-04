@@ -11,6 +11,7 @@
 
 @protocol GesticulationViewDelegate <NSObject>
 
+//手势绘制后获取的密码
 -(void)lockView:(GesticulationView *)lockView pathString:(NSString *)path;
 
 @end
