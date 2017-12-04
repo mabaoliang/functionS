@@ -19,6 +19,7 @@
 		31C4E8F11FD52D7C0084A731 /* ScanQrCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C4E8F01FD52D7C0084A731 /* ScanQrCodeViewController.m */; };
 		31C4E8F41FD539670084A731 /* GesticulationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C4E8F31FD539670084A731 /* GesticulationView.m */; };
 		31C4E8F71FD53ED90084A731 /* GesticulationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C4E8F61FD53ED90084A731 /* GesticulationViewController.m */; };
+		31C4E8FA1FD54D000084A731 /* StartPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C4E8F91FD54D000084A731 /* StartPageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		31C4E8F31FD539670084A731 /* GesticulationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesticulationView.m; sourceTree = "<group>"; };
 		31C4E8F51FD53ED90084A731 /* GesticulationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesticulationViewController.h; sourceTree = "<group>"; };
 		31C4E8F61FD53ED90084A731 /* GesticulationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesticulationViewController.m; sourceTree = "<group>"; };
+		31C4E8F81FD54D000084A731 /* StartPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPageView.h; sourceTree = "<group>"; };
+		31C4E8F91FD54D000084A731 /* StartPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +191,8 @@
 			children = (
 				31C4E8F21FD539670084A731 /* GesticulationView.h */,
 				31C4E8F31FD539670084A731 /* GesticulationView.m */,
+				31C4E8F81FD54D000084A731 /* StartPageView.h */,
+				31C4E8F91FD54D000084A731 /* StartPageView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C4E8FA1FD54D000084A731 /* StartPageView.m in Sources */,
 				31C4E8B71FD52A9B0084A731 /* AppDelegate.m in Sources */,
 				31C4E8EE1FD52D4E0084A731 /* GenerateQrCodeViewController.m in Sources */,
 				31C4E8F41FD539670084A731 /* GesticulationView.m in Sources */,
