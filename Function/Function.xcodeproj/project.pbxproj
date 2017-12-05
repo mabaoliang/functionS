@@ -20,6 +20,14 @@
 		31C4E8F41FD539670084A731 /* GesticulationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C4E8F31FD539670084A731 /* GesticulationView.m */; };
 		31C4E8F71FD53ED90084A731 /* GesticulationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C4E8F61FD53ED90084A731 /* GesticulationViewController.m */; };
 		31C4E8FA1FD54D000084A731 /* StartPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C4E8F91FD54D000084A731 /* StartPageView.m */; };
+		31E63D3D1FD676CC0052F893 /* GravityInductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E63D3C1FD676CC0052F893 /* GravityInductionViewController.m */; };
+		31E63D401FD68CC70052F893 /* TransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E63D3F1FD68CC70052F893 /* TransformViewController.m */; };
+		31E63D4E1FD69A510052F893 /* KMTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E63D441FD69A510052F893 /* KMTag.m */; };
+		31E63D4F1FD69A510052F893 /* KMTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E63D461FD69A510052F893 /* KMTagListView.m */; };
+		31E63D501FD69A510052F893 /* PTLDownMenuList.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E63D491FD69A510052F893 /* PTLDownMenuList.m */; };
+		31E63D511FD69A510052F893 /* PTLMaskingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E63D4B1FD69A510052F893 /* PTLMaskingView.m */; };
+		31E63D521FD69A510052F893 /* PTLMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E63D4D1FD69A510052F893 /* PTLMenuButton.m */; };
+		31E63D551FD69A880052F893 /* DropDownBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31E63D541FD69A880052F893 /* DropDownBoxViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +74,22 @@
 		31C4E8F61FD53ED90084A731 /* GesticulationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesticulationViewController.m; sourceTree = "<group>"; };
 		31C4E8F81FD54D000084A731 /* StartPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartPageView.h; sourceTree = "<group>"; };
 		31C4E8F91FD54D000084A731 /* StartPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartPageView.m; sourceTree = "<group>"; };
+		31E63D3B1FD676CC0052F893 /* GravityInductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityInductionViewController.h; sourceTree = "<group>"; };
+		31E63D3C1FD676CC0052F893 /* GravityInductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityInductionViewController.m; sourceTree = "<group>"; };
+		31E63D3E1FD68CC70052F893 /* TransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformViewController.h; sourceTree = "<group>"; };
+		31E63D3F1FD68CC70052F893 /* TransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformViewController.m; sourceTree = "<group>"; };
+		31E63D431FD69A510052F893 /* KMTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMTag.h; sourceTree = "<group>"; };
+		31E63D441FD69A510052F893 /* KMTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMTag.m; sourceTree = "<group>"; };
+		31E63D451FD69A510052F893 /* KMTagListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMTagListView.h; sourceTree = "<group>"; };
+		31E63D461FD69A510052F893 /* KMTagListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMTagListView.m; sourceTree = "<group>"; };
+		31E63D481FD69A510052F893 /* PTLDownMenuList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTLDownMenuList.h; sourceTree = "<group>"; };
+		31E63D491FD69A510052F893 /* PTLDownMenuList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTLDownMenuList.m; sourceTree = "<group>"; };
+		31E63D4A1FD69A510052F893 /* PTLMaskingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTLMaskingView.h; sourceTree = "<group>"; };
+		31E63D4B1FD69A510052F893 /* PTLMaskingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTLMaskingView.m; sourceTree = "<group>"; };
+		31E63D4C1FD69A510052F893 /* PTLMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTLMenuButton.h; sourceTree = "<group>"; };
+		31E63D4D1FD69A510052F893 /* PTLMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTLMenuButton.m; sourceTree = "<group>"; };
+		31E63D531FD69A880052F893 /* DropDownBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownBoxViewController.h; sourceTree = "<group>"; };
+		31E63D541FD69A880052F893 /* DropDownBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownBoxViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +192,12 @@
 				31C4E8F01FD52D7C0084A731 /* ScanQrCodeViewController.m */,
 				31C4E8F51FD53ED90084A731 /* GesticulationViewController.h */,
 				31C4E8F61FD53ED90084A731 /* GesticulationViewController.m */,
+				31E63D3B1FD676CC0052F893 /* GravityInductionViewController.h */,
+				31E63D3C1FD676CC0052F893 /* GravityInductionViewController.m */,
+				31E63D3E1FD68CC70052F893 /* TransformViewController.h */,
+				31E63D3F1FD68CC70052F893 /* TransformViewController.m */,
+				31E63D531FD69A880052F893 /* DropDownBoxViewController.h */,
+				31E63D541FD69A880052F893 /* DropDownBoxViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +212,7 @@
 		31C4E8E71FD52B4A0084A731 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				31E63D411FD69A510052F893 /* 下拉框 */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -195,6 +226,39 @@
 				31C4E8F91FD54D000084A731 /* StartPageView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		31E63D411FD69A510052F893 /* 下拉框 */ = {
+			isa = PBXGroup;
+			children = (
+				31E63D421FD69A510052F893 /* KMTagListView */,
+				31E63D471FD69A510052F893 /* PTLMenuButton */,
+			);
+			path = "下拉框";
+			sourceTree = "<group>";
+		};
+		31E63D421FD69A510052F893 /* KMTagListView */ = {
+			isa = PBXGroup;
+			children = (
+				31E63D431FD69A510052F893 /* KMTag.h */,
+				31E63D441FD69A510052F893 /* KMTag.m */,
+				31E63D451FD69A510052F893 /* KMTagListView.h */,
+				31E63D461FD69A510052F893 /* KMTagListView.m */,
+			);
+			path = KMTagListView;
+			sourceTree = "<group>";
+		};
+		31E63D471FD69A510052F893 /* PTLMenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				31E63D481FD69A510052F893 /* PTLDownMenuList.h */,
+				31E63D491FD69A510052F893 /* PTLDownMenuList.m */,
+				31E63D4A1FD69A510052F893 /* PTLMaskingView.h */,
+				31E63D4B1FD69A510052F893 /* PTLMaskingView.m */,
+				31E63D4C1FD69A510052F893 /* PTLMenuButton.h */,
+				31E63D4D1FD69A510052F893 /* PTLMenuButton.m */,
+			);
+			path = PTLMenuButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,14 +397,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31E63D511FD69A510052F893 /* PTLMaskingView.m in Sources */,
 				31C4E8FA1FD54D000084A731 /* StartPageView.m in Sources */,
+				31E63D4F1FD69A510052F893 /* KMTagListView.m in Sources */,
+				31E63D521FD69A510052F893 /* PTLMenuButton.m in Sources */,
 				31C4E8B71FD52A9B0084A731 /* AppDelegate.m in Sources */,
+				31E63D4E1FD69A510052F893 /* KMTag.m in Sources */,
 				31C4E8EE1FD52D4E0084A731 /* GenerateQrCodeViewController.m in Sources */,
 				31C4E8F41FD539670084A731 /* GesticulationView.m in Sources */,
 				31C4E8EB1FD52B5C0084A731 /* TableViewController.m in Sources */,
+				31E63D401FD68CC70052F893 /* TransformViewController.m in Sources */,
 				31C4E8F71FD53ED90084A731 /* GesticulationViewController.m in Sources */,
+				31E63D551FD69A880052F893 /* DropDownBoxViewController.m in Sources */,
 				31C4E8F11FD52D7C0084A731 /* ScanQrCodeViewController.m in Sources */,
+				31E63D3D1FD676CC0052F893 /* GravityInductionViewController.m in Sources */,
 				31C4E8B41FD52A9B0084A731 /* main.m in Sources */,
+				31E63D501FD69A510052F893 /* PTLDownMenuList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +648,7 @@
 				31C4E8DE1FD52A9C0084A731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31C4E8DF1FD52A9C0084A731 /* Build configuration list for PBXNativeTarget "FunctionTests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +657,7 @@
 				31C4E8E11FD52A9C0084A731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		31C4E8E21FD52A9C0084A731 /* Build configuration list for PBXNativeTarget "FunctionUITests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +666,7 @@
 				31C4E8E41FD52A9C0084A731 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

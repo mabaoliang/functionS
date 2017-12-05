@@ -10,7 +10,7 @@
 CGFloat const btnW=60.0;
 CGFloat const btnH=60.0;
 NSInteger const line=3;
-
+NSInteger const btnCount=9;
 #define SCREENWITHD  [UIScreen mainScreen].bounds.size.width
 
 @interface GesticulationView ()
@@ -31,7 +31,7 @@ NSInteger const line=3;
 
 -(void)initUI{
 
-    for (int i=0; i<9; i++) {
+    for (int i=0; i<btnCount; i++) {
         
         UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
         [btn setImage:[UIImage imageNamed:@"c"] forState:UIControlStateNormal];
@@ -78,6 +78,7 @@ NSInteger const line=3;
     }
     return nil;
 }
+//手指按下
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     CGPoint p=[self touchGetPoint:touches];
@@ -90,7 +91,7 @@ NSInteger const line=3;
         [self.arrMBtn addObject:btn];
     }
   }
-
+//手指移动
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     CGPoint p=[self touchGetPoint:touches];
@@ -107,7 +108,7 @@ NSInteger const line=3;
     }
     [self setNeedsDisplay]; // 调用(void)drawRect:(CGRect)rect
 }
-
+//手指抬起
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     
@@ -127,13 +128,14 @@ NSInteger const line=3;
     [self.arrMBtn removeAllObjects];
     [self setNeedsDisplay];
 }
-
+//意外中断
 -(void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self touchesEnded:touches withEvent:event];
 }
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
+// 画点线方法
 - (void)drawRect:(CGRect)rect {
     // Drawing code
     if (self.arrMBtn.count==0) {
