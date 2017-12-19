@@ -40,8 +40,8 @@
     [self.view addSubview:imageView];
     //让imageView遵循行为
     [_dynamicItemBehavior addItem:imageView];
-    [_gravityBehavior addItem:imageView];
-    [_collisionBehavior addItem:imageView];
+    [_gravityBehavior addItem:imageView];// 重力下落
+    [_collisionBehavior addItem:imageView]; //碰撞到底部时上弹
     UITapGestureRecognizer *taps = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeItem:)];
     [imageView addGestureRecognizer:taps];
     
@@ -71,9 +71,9 @@
                                                     // double gravityZ = motion.gravity.z;
                                                     // 获取手机的倾斜角度(z是手机与水平面的夹角， xy是手机绕自身旋转的角度)：
                                                     //double z = atan2(gravityZ,sqrtf(gravityX * gravityX + gravityY * gravityY))  ;
-                                                    double xy = atan2(gravityX, gravityY); //反正切函数
+                                                    double xy = atan2(gravityX, gravityY); //反正切函数/
                                                     // 计算相对于y轴的重力方向
-                                                    _gravityBehavior.angle = xy-M_PI_2;
+                                                   _gravityBehavior.angle = xy-M_PI_2;
                                                     
                                                 }];
         

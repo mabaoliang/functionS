@@ -32,7 +32,7 @@
     frame.size = CGSizeMake(size.width + 20, size.height + 10);
     
     self.frame = frame;
-    
+    ///fsdfvfdsd
     self.layer.cornerRadius = 12;
     self.layer.borderColor = self.textColor.CGColor;
     self.layer.borderWidth = 1.0;
