@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16G29" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Entity" representedClassName="Entity" syncable="YES">
+        <attribute name="imgData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reserved" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="People" representedClassName="People" syncable="YES">
+        <attribute name="command" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="forbidden" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="nikeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="portraitUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RecentFace" representedClassName="RecentFace" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="faceIndex" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="People" positionX="-63" positionY="0" width="128" height="135"/>
+        <element name="RecentFace" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Entity" positionX="-63" positionY="36" width="128" height="105"/>
+    </elements>
+</model>
