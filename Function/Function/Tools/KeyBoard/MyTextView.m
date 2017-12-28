@@ -131,7 +131,7 @@
     }else
     {
         face = [NSEntityDescription insertNewObjectForEntityForName:NSStringFromClass([RecentFace class]) inManagedObjectContext:self.context];
-        face.faceIndex = [NSString stringWithFormat:@"%ld",index];
+        face.faceIndex = [NSString stringWithFormat:@"%ld",(long)index];
         face.date = [NSDate date];
     }
     
