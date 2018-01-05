@@ -33,7 +33,7 @@ NSInteger  numCount=5;
     if (!_lbtitle) {
         
         _lbtitle=[[UILabel alloc]initWithFrame:CGRectMake(0, 20, self.frame.size.width-10, 25)];
-        _lbtitle.text=[NSString stringWithFormat:@"%ld后跳转  ",(long)numCount];
+        _lbtitle.text=[NSString stringWithFormat:@"%ld后跳转",(long)numCount];
         _lbtitle.textAlignment=NSTextAlignmentRight;
     }
     return _lbtitle;
@@ -69,7 +69,7 @@ NSInteger  numCount=5;
         {
             time--;
            dispatch_async(dispatch_get_main_queue(), ^{
-               _lbtitle.text=[NSString stringWithFormat:@"%ld后跳转(long)  ",(long)time];
+               _lbtitle.text=[NSString stringWithFormat:@"%ld后跳转",(long)time];
            });
             
         }

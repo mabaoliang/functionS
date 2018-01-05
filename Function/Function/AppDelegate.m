@@ -41,7 +41,8 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-   [ self comeToBackgroundMode];
+    
+[ self comeToBackgroundMode];
 }
 
 

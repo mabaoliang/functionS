@@ -8,9 +8,11 @@
 
 #import "StepGaugeViewController.h"
 #import "WLHealthKitManage.h"
+#import "GraphicsView.h"
 @interface StepGaugeViewController ()
 @property(nonatomic,strong)  UILabel *stepLabel;
 @property(nonatomic,strong)UILabel *distanceLabel;
+@property(nonatomic,strong)GraphicsView *grView;
 @end
 
 @implementation StepGaugeViewController
@@ -38,6 +40,7 @@
     _distanceLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 280, 200, 40)];
     _distanceLabel.backgroundColor = [UIColor cyanColor];
     [self.view addSubview:_distanceLabel];
+    [self.view addSubview:self.grView];
     // Do any additional setup after loading the view.
 }
 - (void)onClickBtn1
@@ -46,7 +49,10 @@
     __weak typeof(self) weakself=self;
     [manager getRealTimeStepCountCompletionHandler:^(double value, NSError *error) {
        
-        weakself.stepLabel.text=[NSString stringWithFormat:@"%f",value];
+        dispatch_async(dispatch_get_main_queue(), ^{
+              weakself.stepLabel.text=[NSString stringWithFormat:@"%f",value];
+        });
+      
         NSLog(@"步数==%f",value);
     }];
 }
@@ -57,6 +63,16 @@
     
 }
 
+-(GraphicsView *)grView
+{
+    if (!_grView) {
+        
+        _grView=[[GraphicsView alloc]initWithFrame:CGRectMake(0, 350, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.width)];
+    }
+    
+    return _grView;
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

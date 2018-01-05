@@ -14,6 +14,7 @@
 		31B7526E1FF398B4009A1DA9 /* StepGaugeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B7526D1FF398B4009A1DA9 /* StepGaugeViewController.m */; };
 		31B752741FF39C63009A1DA9 /* HealthKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B752721FF39C63009A1DA9 /* HealthKitManager.m */; };
 		31B752771FF39C6E009A1DA9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B752761FF39C6E009A1DA9 /* HealthKit.framework */; };
+		31BC80041FFF09FB00D4035F /* GraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC80031FFF09FB00D4035F /* GraphicsView.m */; };
 		31C4E8B41FD52A9B0084A731 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C4E8B31FD52A9B0084A731 /* main.m */; };
 		31C4E8B71FD52A9B0084A731 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C4E8B61FD52A9B0084A731 /* AppDelegate.m */; };
 		31C4E8BD1FD52A9B0084A731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31C4E8BB1FD52A9B0084A731 /* Main.storyboard */; };
@@ -457,6 +458,8 @@
 		31B752731FF39C63009A1DA9 /* HealthKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthKitManager.h; sourceTree = "<group>"; };
 		31B752761FF39C6E009A1DA9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		31B752781FF39C6E009A1DA9 /* Function.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Function.entitlements; sourceTree = "<group>"; };
+		31BC80021FFF09FB00D4035F /* GraphicsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphicsView.h; sourceTree = "<group>"; };
+		31BC80031FFF09FB00D4035F /* GraphicsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphicsView.m; sourceTree = "<group>"; };
 		31C4E8AF1FD52A9B0084A731 /* Function.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Function.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C4E8B31FD52A9B0084A731 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31C4E8B51FD52A9B0084A731 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1065,6 +1068,8 @@
 				31C4E8F31FD539670084A731 /* GesticulationView.m */,
 				31C4E8F81FD54D000084A731 /* StartPageView.h */,
 				31C4E8F91FD54D000084A731 /* StartPageView.m */,
+				31BC80021FFF09FB00D4035F /* GraphicsView.h */,
+				31BC80031FFF09FB00D4035F /* GraphicsView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2069,6 +2074,7 @@
 				31C4E8B41FD52A9B0084A731 /* main.m in Sources */,
 				3140B53F1FF48FDD0030C827 /* WLHealthKitManage.m in Sources */,
 				31F0DD0F1FF096860066D695 /* MyTextView.m in Sources */,
+				31BC80041FFF09FB00D4035F /* GraphicsView.m in Sources */,
 				31E63D501FD69A510052F893 /* PTLDownMenuList.m in Sources */,
 				31F0DCF41FF096860066D695 /* Coredata Manger.m in Sources */,
 				31F0DD121FF096860066D695 /* ToolView.m in Sources */,
