@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		313C674E200D83E1009D5BDC /* BezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 313C674D200D83E1009D5BDC /* BezierViewController.m */; };
 		3140B53C1FF48FDD0030C827 /* HKHealthStore+WLPLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3140B5351FF48FDD0030C827 /* HKHealthStore+WLPLExtensions.m */; };
 		3140B53D1FF48FDD0030C827 /* WalkCountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3140B5371FF48FDD0030C827 /* WalkCountModel.m */; };
 		3140B53E1FF48FDD0030C827 /* WLDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3140B5391FF48FDD0030C827 /* WLDate.m */; };
@@ -15,6 +16,7 @@
 		31B752741FF39C63009A1DA9 /* HealthKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B752721FF39C63009A1DA9 /* HealthKitManager.m */; };
 		31B752771FF39C6E009A1DA9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31B752761FF39C6E009A1DA9 /* HealthKit.framework */; };
 		31BC80041FFF09FB00D4035F /* GraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC80031FFF09FB00D4035F /* GraphicsView.m */; };
+		31BC80061FFF68F100D4035F /* kl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 31BC80051FFF68F100D4035F /* kl.jpg */; };
 		31C4E8B41FD52A9B0084A731 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C4E8B31FD52A9B0084A731 /* main.m */; };
 		31C4E8B71FD52A9B0084A731 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C4E8B61FD52A9B0084A731 /* AppDelegate.m */; };
 		31C4E8BD1FD52A9B0084A731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31C4E8BB1FD52A9B0084A731 /* Main.storyboard */; };
@@ -444,6 +446,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		313C674C200D83E1009D5BDC /* BezierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BezierViewController.h; sourceTree = "<group>"; };
+		313C674D200D83E1009D5BDC /* BezierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierViewController.m; sourceTree = "<group>"; };
 		3140B5341FF48FDD0030C827 /* HKHealthStore+WLPLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HKHealthStore+WLPLExtensions.h"; sourceTree = "<group>"; };
 		3140B5351FF48FDD0030C827 /* HKHealthStore+WLPLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HKHealthStore+WLPLExtensions.m"; sourceTree = "<group>"; };
 		3140B5361FF48FDD0030C827 /* WalkCountModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WalkCountModel.h; sourceTree = "<group>"; };
@@ -460,6 +464,7 @@
 		31B752781FF39C6E009A1DA9 /* Function.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Function.entitlements; sourceTree = "<group>"; };
 		31BC80021FFF09FB00D4035F /* GraphicsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphicsView.h; sourceTree = "<group>"; };
 		31BC80031FFF09FB00D4035F /* GraphicsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphicsView.m; sourceTree = "<group>"; };
+		31BC80051FFF68F100D4035F /* kl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kl.jpg; sourceTree = "<group>"; };
 		31C4E8AF1FD52A9B0084A731 /* Function.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Function.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C4E8B31FD52A9B0084A731 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		31C4E8B51FD52A9B0084A731 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1038,6 +1043,8 @@
 				31F0DD141FF097150066D695 /* KeyBoardViewController.m */,
 				31B7526C1FF398B4009A1DA9 /* StepGaugeViewController.h */,
 				31B7526D1FF398B4009A1DA9 /* StepGaugeViewController.m */,
+				313C674C200D83E1009D5BDC /* BezierViewController.h */,
+				313C674D200D83E1009D5BDC /* BezierViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1064,6 +1071,7 @@
 		31C4E8E81FD52B4A0084A731 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				31BC80051FFF68F100D4035F /* kl.jpg */,
 				31C4E8F21FD539670084A731 /* GesticulationView.h */,
 				31C4E8F31FD539670084A731 /* GesticulationView.m */,
 				31C4E8F81FD54D000084A731 /* StartPageView.h */,
@@ -1777,6 +1785,7 @@
 				31F0DC181FF096850066D695 /* 045@2x.png in Resources */,
 				31F0DCB51FF096850066D695 /* 098.gif in Resources */,
 				31F0DC8A1FF096850066D695 /* 083@2x.png in Resources */,
+				31BC80061FFF68F100D4035F /* kl.jpg in Resources */,
 				31F0DCA01FF096850066D695 /* 091.gif in Resources */,
 				31F0DC421FF096850066D695 /* 059@2x.png in Resources */,
 				31F0DBB41FF096850066D695 /* 012.png in Resources */,
@@ -2071,6 +2080,7 @@
 				31E63D3D1FD676CC0052F893 /* GravityInductionViewController.m in Sources */,
 				31F0DD0E1FF096860066D695 /* Model.xcdatamodeld in Sources */,
 				3140B53D1FF48FDD0030C827 /* WalkCountModel.m in Sources */,
+				313C674E200D83E1009D5BDC /* BezierViewController.m in Sources */,
 				31C4E8B41FD52A9B0084A731 /* main.m in Sources */,
 				3140B53F1FF48FDD0030C827 /* WLHealthKitManage.m in Sources */,
 				31F0DD0F1FF096860066D695 /* MyTextView.m in Sources */,

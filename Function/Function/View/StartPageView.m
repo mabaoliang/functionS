@@ -32,9 +32,13 @@ NSInteger  numCount=5;
 {
     if (!_lbtitle) {
         
-        _lbtitle=[[UILabel alloc]initWithFrame:CGRectMake(0, 20, self.frame.size.width-10, 25)];
-        _lbtitle.text=[NSString stringWithFormat:@"%ld后跳转",(long)numCount];
-        _lbtitle.textAlignment=NSTextAlignmentRight;
+        _lbtitle=[[UILabel alloc]initWithFrame:CGRectMake(self.frame.size.width-60, 20, 50, 50)];
+        _lbtitle.text=[NSString stringWithFormat:@"%lds\n跳转",(long)numCount];
+        _lbtitle.textAlignment=NSTextAlignmentCenter    ;
+        _lbtitle.backgroundColor=[UIColor lightGrayColor];
+        _lbtitle.numberOfLines=0;
+        _lbtitle.layer.cornerRadius=25.0;
+        _lbtitle.layer.masksToBounds=YES;
     }
     return _lbtitle;
 }
@@ -50,7 +54,6 @@ NSInteger  numCount=5;
 }
 //定时器
 -(void)GCD{
- 
 
     __block NSInteger time=numCount;
     dispatch_queue_t queque=dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0);
@@ -69,7 +72,7 @@ NSInteger  numCount=5;
         {
             time--;
            dispatch_async(dispatch_get_main_queue(), ^{
-               _lbtitle.text=[NSString stringWithFormat:@"%ld后跳转",(long)time];
+               _lbtitle.text=[NSString stringWithFormat:@"%lds\n跳转",(long)time];
            });
             
         }

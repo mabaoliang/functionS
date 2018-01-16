@@ -151,6 +151,7 @@
         
         CGFloat lab_x = yPoint.x + (r + bLWidth/2) * cos((startAngle + (endAngle - startAngle)/2)) - bLWidth/2;
         CGFloat lab_y = yPoint.y + (r + bLWidth*3/8) * sin((startAngle + (endAngle - startAngle)/2)) - bLWidth*3/8;
+        //下面注释的代码可以让文字在扇形中
         //CGFloat centerAngle =(startAngle + endAngle);
        // CGFloat lab_x = (r/2 + bLWidth/2) * cos(centerAngle/2) + yPoint.x - bLWidth/2;
         //CGFloat lab_y = (r/2+ bLWidth/3) * sin(centerAngle/2) + yPoint.y-bLWidth/3;

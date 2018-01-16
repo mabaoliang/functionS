@@ -29,7 +29,7 @@
 {
     if (!_arrKey) {
         
-        _arrKey=@[@"二维码生成",@"扫描二维码",@"手势解锁",@"重力感应",@"transForm",@"下拉框",@"自定义键盘",@"计步"];
+        _arrKey=@[@"二维码生成",@"扫描二维码",@"手势解锁",@"重力感应",@"transForm",@"下拉框",@"自定义键盘",@"计步",@"统计图"];
     }
 
     return _arrKey;
@@ -37,7 +37,7 @@
 -(NSArray *)arrValueClass
 {
     if (!_arrValueClass) {
-        _arrValueClass=@[@"GenerateQrCodeViewController",@"ScanQrCodeViewController",@"GesticulationViewController",@"GravityInductionViewController",@"TransformViewController",@"DropDownBoxViewController",@"KeyBoardViewController",@"StepGaugeViewController"];
+        _arrValueClass=@[@"GenerateQrCodeViewController",@"ScanQrCodeViewController",@"GesticulationViewController",@"GravityInductionViewController",@"TransformViewController",@"DropDownBoxViewController",@"KeyBoardViewController",@"StepGaugeViewController",@"BezierViewController"];
     }
   
     return _arrValueClass;
