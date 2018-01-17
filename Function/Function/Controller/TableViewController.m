@@ -7,7 +7,7 @@
 //
 
 #import "TableViewController.h"
-
+#import "Coder.h"
 @interface TableViewController ()
 @property(strong,nonatomic)NSArray *arrKey;
 @property(strong,nonatomic)NSArray *arrValueClass;
@@ -18,13 +18,75 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+   
 }
 
+//多对象归档解档
+-(void)coderMoreObject
+{
+    
+    // 多个对象的归档解档-------------------
+    
+    Coder *a=[[Coder alloc]init];
+    a.name=@"赵一";
+    a.sex=@"男";
+    a.age=21;
+    
+    Coder *b=[[Coder alloc]init];
+    b.name=@"钱儿";
+    b.sex=@"男";
+    b.age=22;
+    //新建一块可变数据区
+    NSMutableData *data=[NSMutableData data];
+    //将数据区连接到一个NSKeyedArchiver对象
+    NSKeyedArchiver *archiver=[[NSKeyedArchiver alloc]initForWritingWithMutableData:data] ;
+    // 开始存档对象，存档的数据都会存储到NSMutableData中 中资财经
+    [archiver encodeObject:a forKey:@"a"];
+    [archiver encodeObject:b forKey:@"b"];
+    // 存档完毕(一定要调用这个方法)
+    [archiver finishEncoding];
+    //将存档的数据写入文件
+    NSString *temp = NSTemporaryDirectory();
+    NSString *filePath = [temp stringByAppendingPathComponent:@"coder.data"]; //注：保存文件的扩展名可以任意取
+    [data writeToFile:filePath atomically:YES];
+    //***************解当
+    
+    // 从文件中读取数据
+    NSData *data1 = [NSData dataWithContentsOfFile:filePath];
+    // 根据数据，解析成一个NSKeyedUnarchiver对象
+    NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data1];
+    Coder *person1 = [unarchiver decodeObjectForKey:@"a"];
+    Coder *person2 = [unarchiver decodeObjectForKey:@"b"];
+    NSLog(@"%@",person1.name);
+    NSLog(@"%@",person2.name);
+    // 恢复完毕
+    [unarchiver finishDecoding];
+    
+    //_------------------------------------------
+    
+}
+//单个对象的归档解档
+-(void)coderDgWay
+{
+    //对象归档
+    Coder *c=[[Coder alloc]init];
+    c.name=@"肖明";
+    c.sex=@"男";
+    c.age=23;
+    //这里以temp路径为例，存到temp路径下
+    NSString *temp = NSTemporaryDirectory();
+    NSString *filePath = [temp stringByAppendingPathComponent:@"obj.data"]; //注：保存文件的扩展名可以任意取，不影响。
+    NSLog(@"%@", filePath);
+    //归档
+    [NSKeyedArchiver archiveRootObject:c toFile:filePath];
+    
+    //取出归档的文件再解档
+    NSString *filePaths = [NSTemporaryDirectory() stringByAppendingPathComponent:@"obj.data"];
+    //解档
+    Coder *person = [NSKeyedUnarchiver unarchiveObjectWithFile:filePaths];
+    NSLog(@"name = %@, age = %d",person.name,person.age);
+}
 -(NSArray *)arrKey
 {
     if (!_arrKey) {

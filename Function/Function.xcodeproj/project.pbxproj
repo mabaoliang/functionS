@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31047B0D200ED8A70082441C /* Coder.m in Sources */ = {isa = PBXBuildFile; fileRef = 31047B0C200ED8A70082441C /* Coder.m */; };
 		313C674E200D83E1009D5BDC /* BezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 313C674D200D83E1009D5BDC /* BezierViewController.m */; };
 		3140B53C1FF48FDD0030C827 /* HKHealthStore+WLPLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3140B5351FF48FDD0030C827 /* HKHealthStore+WLPLExtensions.m */; };
 		3140B53D1FF48FDD0030C827 /* WalkCountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3140B5371FF48FDD0030C827 /* WalkCountModel.m */; };
@@ -446,6 +447,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31047B0B200ED8A70082441C /* Coder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coder.h; sourceTree = "<group>"; };
+		31047B0C200ED8A70082441C /* Coder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coder.m; sourceTree = "<group>"; };
 		313C674C200D83E1009D5BDC /* BezierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BezierViewController.h; sourceTree = "<group>"; };
 		313C674D200D83E1009D5BDC /* BezierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BezierViewController.m; sourceTree = "<group>"; };
 		3140B5341FF48FDD0030C827 /* HKHealthStore+WLPLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HKHealthStore+WLPLExtensions.h"; sourceTree = "<group>"; };
@@ -1054,6 +1057,8 @@
 			children = (
 				31B752731FF39C63009A1DA9 /* HealthKitManager.h */,
 				31B752721FF39C63009A1DA9 /* HealthKitManager.m */,
+				31047B0B200ED8A70082441C /* Coder.h */,
+				31047B0C200ED8A70082441C /* Coder.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2082,6 +2087,7 @@
 				3140B53D1FF48FDD0030C827 /* WalkCountModel.m in Sources */,
 				313C674E200D83E1009D5BDC /* BezierViewController.m in Sources */,
 				31C4E8B41FD52A9B0084A731 /* main.m in Sources */,
+				31047B0D200ED8A70082441C /* Coder.m in Sources */,
 				3140B53F1FF48FDD0030C827 /* WLHealthKitManage.m in Sources */,
 				31F0DD0F1FF096860066D695 /* MyTextView.m in Sources */,
 				31BC80041FFF09FB00D4035F /* GraphicsView.m in Sources */,

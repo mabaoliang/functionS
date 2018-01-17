@@ -22,6 +22,7 @@
   
     [self.window makeKeyAndVisible]; //让window可见后，下面view才可以显示
     [self.window addSubview:self.startView]; //广告view
+    self.window.backgroundColor=[UIColor whiteColor];
     // Override point for customization after application launch.
     return YES;
 }

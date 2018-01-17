@@ -46,6 +46,8 @@
     }
     return _y_arr;
 }
+
+//创建按钮
 - (void)initSelBtn
 {
     NSArray *arr = @[@"柱状图", @"饼状图", @"折线图"];
@@ -60,6 +62,7 @@
         [self.view addSubview:btn];
     }
 }
+//按钮实现方法
 - (void)btnClick:(UIButton *)btn
 {
     if (btn.tag == 100) {

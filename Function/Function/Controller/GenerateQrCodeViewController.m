@@ -31,7 +31,7 @@
     //恢复滤镜默认设置
     [filter setDefaults];
     //存放的信息
-    NSString *info = @"我叫王冲";
+    NSString *info = @"百度一下";
     //把信息转化为NSData
     NSData *infoData = [info dataUsingEncoding:NSUTF8StringEncoding];
     //滤镜对象kvc存值
@@ -39,7 +39,7 @@
     // 生成二维码图片
     CIImage *outImage = [filter outputImage];
     //将二维码图片放到视图上
-    self.qrCodeView.image =[ self createNonInterpolatedUIImageFormCIImage:outImage withSize:300];
+    self.qrCodeView.image =[UIImage imageWithCIImage:outImage]; //[ self createNonInterpolatedUIImageFormCIImage:outImage withSize:300];
 }
 
 /**
